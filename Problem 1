@@ -1,0 +1,41 @@
+
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    int choice, packageA, packageB, packageC, addhours;
+      packageA = 995;
+      packageB = 1495;
+      packageC = 1995;
+    
+   cout<< "Jordi's' Internet Services";
+   cout<< "\n\There are 3 Packages";
+   
+   cout<<"\n\nPackage A: For P995/mo 10 hrs of access are provided.Additional hours are P20/hr.";
+   cout<<"\n\Package B: For P1495/mo 20 hrs of access are provided. Additional hours are P10/hr.";
+   cout<<"\n\Package C: For P1995/mo of unlimited access is provided.";
+   
+   cout<<"\n\nType 1 for Package A \nType 2 for Package B\nType 3 for Package C";
+   
+   cout << "\n\nChoose Your Description: " ;
+        cin >> choice;
+        cout << "\nAccumulate the total number of hours used: " ;
+        cin >> addhours;
+        
+        if (choice == 1)
+            cout << "\n\nTotal Monthly Bill = " << packageA + (addhours - 10) * 20 <<endl;
+        
+        else if (choice == 2)
+            cout << "\n\nTotal Monthly Bill = " << packageB + (addhours - 20) * 10<<endl;
+        
+        else if (choice == 3)
+            cout << "\n\nTotal Monthly Bill = " << packageC <<endl;
+    
+    cout << "Thank you for choosing Jordi's internet services, have a good internet!" << endl;
+    
+   
+    return 0;
+}
