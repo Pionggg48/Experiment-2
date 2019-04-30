@@ -1,0 +1,36 @@
+// Jean Piolo C. Ong, Experiment 2, Problem 2
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	double latecharge, waterconsumption, balancedue, charge, watercost, water;
+	charge = 35;
+	
+	latecharge = 20;
+	
+	cout << "Enter how many Gallons of water used: "; 
+	cin >> water;
+	cout << " Enter the balance due : "; 
+	cin >> balancedue;
+	
+	if (balancedue > 0)
+	{
+		waterconsumption = water * 1.10;
+		watercost = charge + waterconsumption + balancedue + latecharge;
+		cout << " The water bill for this month: Pesos " << watercost << endl;
+	}
+	
+	else 
+	{
+		waterconsumption = water * 1.10;
+		watercost = charge + waterconsumption;
+		cout << "The water bill for this month: Pesos " << watercost << endl;
+		
+	}
+	
+return 0;
+
+}
