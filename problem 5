@@ -1,0 +1,17 @@
+// Jean Piolo C. Ong, Experiment 2, Problem 5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a;
+	cout << "Counting..." << endl;
+
+	
+	for (a=1;a<=10;a++)
+	cout << a << "," ;
+	for (a=12;a<=30;a+=2)
+	cout << a << "," ;
+
+	return 0;
+}
