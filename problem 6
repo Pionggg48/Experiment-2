@@ -1,0 +1,30 @@
+// Jean Piolo C. Ong, Experiment 2, Problem 6
+#include <iostream>  
+using namespace std;  
+int main() 
+{  
+  int x, c, nseries, a, b;
+  
+  a = 0;
+  b = 1;
+  
+  cout << "Enter the number of terms in the Fibonacci Sequence: " << endl;
+  cin >> nseries ;
+  
+  cout << "The Fibonacci series are" <<endl;
+  
+  for ( x = 0 ; x < nseries ; x++)
+	{
+		if (x <= 1)
+		c = x;
+		else
+		{
+			c = a + b;
+			a = b;
+			b= c;
+		}
+	cout << c << " ";
+	}
+	return 0;
+	  
+}
