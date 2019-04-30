@@ -6,15 +6,29 @@ using namespace std;
 
 int main()
 {
-    int n, sum = 0;
-
+    int n, sum;
+    n = 0;
+    sum = 0;
     cout << "Enter a number: ";
     cin >> n;
-
-    for (int i = 1; i <= n; i++) {
-        sum += i;
+    
+    while (n > 0)
+    {
+    for (int i = 1; i <= n; ++i)
+	{
+    	sum += i;
     }
 
-    cout << "Sum of the numbers from 1 to "<< n << " is " << sum;
+    cout << "Sum of the numbers from 1 to "<< n << " is " << sum << endl;
+    cout << "Enter a number: ";
+    cin >> n;
+    sum = 0;
+}
+    while(n != 0 && n <= 0)
+    {
+	
+    cout<< " Good Job";
+    break;
+}
     return 0;
 }
